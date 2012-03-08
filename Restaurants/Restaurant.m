@@ -14,7 +14,7 @@
     float dessertPrice = 5.50;
     float winePrice = 34.25;
     
-    int numberOfGuests = 4;
+    int numberOfGuests = 1;
     
     float taxRate = .0875;
     float tipRate = .2;
@@ -28,6 +28,7 @@
     int numberOfEntreesOrdered = 0;
     int numberOfWineBottlesOrdered = 0;
     
+    tip = dinnerPrice *tipRate; 
     
     /* Set dinnerPrice to be the cost of:
         1 entree per person
