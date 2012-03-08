@@ -6,6 +6,7 @@
 #import "Restaurant.h"
 
 @implementation Restaurant
+@synthesize name, address, review, year; 
 
 -(float) priceOfDinner
 {
