@@ -68,7 +68,7 @@
         <scene sceneID="24">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="" title="Detail" id="21" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" title="Dinosaur BBQ" id="21" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22">
                         <rect key="frame" x="0.0" y="64" width="320" height="372"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -97,17 +97,24 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="SG0-hr-szM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="1183759318-grande-dino-combo-big.jpg" id="SG0-hr-szM">
                                 <rect key="frame" x="35" y="27" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems>
-                        <barButtonItem title="Tips (12)" id="6PT-At-gl2"/>
-                        <barButtonItem title="Reviews (20)" id="gtX-Cf-YGw"/>
+                        <barButtonItem title="Tips (12)" id="6PT-At-gl2">
+                            <connections>
+                                <segue destination="21" kind="push" id="2Ze-ur-p1C"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Reviews (20)" id="gtX-Cf-YGw">
+                            <connections>
+                                <segue destination="21" kind="custom" id="BdW-DJ-oL8"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Dinosaur BBQ" id="26"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -119,6 +126,9 @@
             <point key="canvasLocation" x="924" y="64"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1183759318-grande-dino-combo-big.jpg" width="484" height="322"/>
+    </resources>
     <classes>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
@@ -135,4 +145,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="33"/>
+    </inferredMetricsTieBreakers>
 </document>
